@@ -8,14 +8,22 @@
 
 // console.log(text,result)
 
-let userName = ['ali','reza','jamal','elham','abas']
+// let userName = ['ali','reza','jamal','elham','abas']
 
-let newUserName = userName.map((item,i,x)=>{
-    if(i + 1 === x.length){
-        console.log('item calling',i)
-    }else{
-        console.log('item',i);
-    }
-})
+// let newUserName = userName.map((item,i,x)=>{
+//     if(i + 1 === x.length){
+//         console.log('item calling',i)
+//     }else{
+//         console.log('item',i);
+//     }
+// })
+
+let user = { name: 'John' };
+
+let admin = user;
+
+admin.name = 'Pete'; // changed by the "admin" reference
+
+alert(user.name);
 
 
